@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="element_fragment_margin">20dp</dimen>
+
+</resources>

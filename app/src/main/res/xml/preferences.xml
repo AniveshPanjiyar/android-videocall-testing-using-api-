@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekBar="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        android:layout="@layout/view_for_preference"
+        android:selectable="false" />
+
+    <PreferenceCategory android:title="@string/title_video_category">
+
+        <com.anonymous.anonymous.view.SeekBarPreference
+            android:defaultValue="@string/pref_startbitratevalue_default"
+            android:key="@string/pref_startbitratevalue_key"
+            android:max="@integer/pref_startbitratevalue_max_value"
+            android:summary="%s"
+            android:title="@string/pref_startbitratevalue_title"
+            seekBar:min="@integer/pref_startbitratevalue_min_value"
+            seekBar:stepSize="@integer/pref_startbitratevalue_step_size" />
+
+        <com.anonymous.anonymous.view.ListPreferenceCompat
+            android:defaultValue="@string/pref_audiocodec_def"
+            android:dialogTitle="@string/pref_audiocodec_dlg"
+            android:entries="@array/audioCodecs"
+            android:entryValues="@array/audioCodecs"
+            android:key="@string/pref_audiocodec_key"
+            android:summary="%s"
+            android:title="@string/pref_audiocodec_title" />
+
+        <com.anonymous.anonymous.view.ListPreferenceCompat
+            android:defaultValue="@string/pref_videocodec_default"
+            android:dialogTitle="@string/pref_videocodec_dlg"
+            android:entries="@array/videoCodecs"
+            android:entryValues="@array/videoCodecsValues"
+            android:key="@string/pref_videocodec_key"
+            android:summary="%s"
+            android:title="@string/pref_videocodec_title" />
+
+    </PreferenceCategory>
+
+    <Preference
+        android:layout="@layout/preference_version"
+        android:selectable="false" />
+
+</PreferenceScreen>

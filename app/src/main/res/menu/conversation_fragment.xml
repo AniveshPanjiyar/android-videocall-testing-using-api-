@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+    <item
+        android:id="@+id/screen_share"
+        android:checkable="true"
+        android:icon="@drawable/ic_screen_share"
+        android:title="@string/action_screen_share"
+        app:showAsAction="ifRoom" />
+</menu>
